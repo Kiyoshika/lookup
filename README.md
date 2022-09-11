@@ -21,7 +21,7 @@ This data structure also supports providing custom deallocators incase you have 
 ## Usage Notes
 This data structure is designed for inserting large chunks of data at once to later run many queries against it. In these scenarios, it will perform its best.
 
-This data structure is NOT designed for rapid push and search. I.e., many push and find calls back to back. This is because the data is sorted on every call to `lookup_push`.
+This data structure is NOT designed for rapid push and search. I.e., many push and find calls back to back. This is because the data is sorted on every call to `lookup_find`.
 
 It's recommended to design your code to insert as much data as possible up front before querying records.
 
